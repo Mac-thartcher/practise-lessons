@@ -1,0 +1,191 @@
+body {
+  background-color: rgb(216, 214, 203);
+  font-size: 18px;
+}
+
+h2 {
+  margin: 20px;
+  padding-left: 20px;
+}
+
+form {
+  background-color: rgb(255, 196, 237);
+  color: rgb(21, 21, 21);
+  width: 40%;
+  max-width: 100vw;
+  height: 40vh;
+  font-size: 16px;
+  font-weight: bolder;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* border-width: 4px;
+    border-style: solid;
+    border-color: brown; */
+
+  border: 4px solid olive;
+  padding: 20px;
+}
+/* .box{
+    background-color: rgb(212, 212, 173);
+    width: 200px;
+    border: 6px solid rebeccapurple;
+    padding: 24px 30px;
+    margin: 8px 16px ;
+    box-sizing: border-box;
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+dl {
+  padding: 25px 30px;
+  background-color: rgb(225, 185, 185);
+}
+
+/* specificity id,class, generics */
+/* bad practices multiple classes/ids as selectors,
+generic and class/id as selectors,using important */
+#heading {
+  color: rgb(47, 144, 255);
+}
+
+.paragraph-1 {
+  color: blue;
+}
+
+.heading-1 {
+  color: green;
+}
+table {
+  color: red;
+}
+
+/* box models */
+
+.title {
+  background-color: red;
+  /* position: relative; */
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.parent {
+  background-color: rgb(82, 82, 105);
+  height: 200px;
+  /* position: relative; */
+  position: sticky;
+}
+.child {
+  background-color: yellow;
+  width: 64px;
+  height: 64px;
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.WebTitle {
+  font-size: 54px;
+}
+.paragraph {
+  font-size: 24px;
+}
+
+@media (max-width: 640px) {
+  .WebTitle {
+    font-size: 36px;
+  }
+
+  .paragraph {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480) {
+  .WebTitle {
+    font-size: 32px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+}
+
+button:hover {
+  background-color: brown;
+  transition: 300ms;
+  opacity: 30%;
+  padding: 4px;
+}
+
+.media::before {
+  content: "Hey my name is ";
+  background-color: rgb(67, 117, 117);
+  margin: 8px;
+}
+.media::after {
+  content: "I am a girl ";
+  background-color: orange;
+  margin: 6px;
+}
+
+.media {
+  /* transition: translateY(16px); */
+  animation: pointdown 100ms infinite alternate-reverse;
+}
+@keyframes pointdown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(16px);
+  }
+}
+
+.loops {
+  background-color: rgb(99, 5, 5);
+  font-size: 25px;
+  color: rgb(95, 175, 95);
+  font-style: oblique;
+  padding-bottom: 20px;
+}
+
+/* .box {
+    font-size: 20px;
+}
+
+.text-1 {
+    line-height: 2rem;
+    background-color: rgb(93, 118, 118);
+
+} */
+
+.hero {
+  background-color: darkblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.child {
+  background-color: orange;
+  width: 50%;
+  height: 100px;
+}
+
+#parent {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(67, 105, 105);
+}
+.child {
+  width: 200px;
+  height: 100px;
+  margin-top: 15px;
+  background-color: black;
+}
