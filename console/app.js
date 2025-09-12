@@ -8,7 +8,7 @@ console.log(age);
 
 // const key
 
-const point = 100;
+let points = 100;
 points = 50;
 console.log(points);
 
@@ -530,6 +530,49 @@ body.addEventListener("click", function () {
 });
 
 body.addEventListener("click",function (event) {
-    event.stopPropagation;
+    event.stopPropagation();
     console.log("body clicked (in capture mode)");
   }, { capture: true });
+
+
+
+
+
+  
+// javascript classes syntax
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   get name() {
+//     return this._name;
+//   }
+
+//   greet() {
+//     console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+//   }
+// }
+
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(value) {
+    if (!value) {
+      console.log("Name can't be empty.");
+      return;
+    }
+    this._name = value;
+  }
+
+  static greetEveryone() {
+    console.log("Hello, users!");
+  }
+}
+

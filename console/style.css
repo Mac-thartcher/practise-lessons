@@ -189,3 +189,12 @@ button:hover {
   margin-top: 15px;
   background-color: black;
 }
+.classes {
+  background-color:purple;
+  text-align: center;
+  color: #ffff;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding: 50px 20px;
+
+}
