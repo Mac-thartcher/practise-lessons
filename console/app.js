@@ -576,3 +576,18 @@ class User {
   }
 }
 
+
+// javascript object prototype
+const animal = {
+eats: true,
+eat: function(food) {
+console.log(`I'm eating ${food}`);
+}
+};
+const cat = {
+meows: true
+};
+cat.__proto__ = animal;
+console.log(cat.meows); // true
+console.log(cat.eats); // true
+cat.eat('Fish'); // I'm eating

@@ -198,3 +198,10 @@ button:hover {
    padding: 50px 20px;
 
 }
+
+.object {
+  background-color: peru;
+  color: #ffff;
+  
+  flex-wrap: nowrap;
+}
