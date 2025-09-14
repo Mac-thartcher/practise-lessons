@@ -591,3 +591,10 @@ cat.__proto__ = animal;
 console.log(cat.meows); // true
 console.log(cat.eats); // true
 cat.eat('Fish'); // I'm eating
+
+// arrow function
+const arrowFunction1 = () => {
+return 22;
+}
+// Implicit return
+const arrowFunction2 = () => 22;
