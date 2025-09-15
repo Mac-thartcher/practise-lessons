@@ -627,7 +627,12 @@ const object ={
   methodArrowFunction:() => {
     console.log(this)
   }
-
 }
 object.methodFunction();
 object.methodArrowFunction();
+
+const sum = (a,b) => a + b;
+console.log(sum(5, 10));
+
+const multiplyByTwo = a => a* 2;
+console.log(multiplyByTwo(20));
