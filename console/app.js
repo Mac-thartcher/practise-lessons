@@ -1,4 +1,7 @@
 // let keyword
+
+
+
 let userEmail = "thartchermac19@gmail.com";
 let age = 30;
 let name = "MacT";
@@ -13,6 +16,7 @@ points = 50;
 console.log(points);
 
 // currency converter assg zac
+const style = { backgroundColor: 'skyblue' };
 
 let USD = 1200;
 let AUD = USD * 1.5;
@@ -53,6 +57,7 @@ if (orderAmount < 50) {
   discount = "20%";
 }
 console.log(discount);
+
 
 let hasMembership = false;
 let signIn = true;
@@ -346,6 +351,7 @@ console.log(student);
 student["alcoholLevel"] = "60%";
 console.log(student);
 
+
 // to add an object
 student.name = "Daddy";
 console.log(student.name);
@@ -529,6 +535,7 @@ body.addEventListener("click", function () {
   console.log("body clicked");
 });
 
+
 body.addEventListener("click",function (event) {
     event.stopPropagation();
     console.log("body clicked (in capture mode)");
@@ -598,5 +605,29 @@ return 22;
 }
 // Implicit return
 const arrowFunction2 = () => 22;
+
 const add = (a, b) => a + b;
 console.log(add(2, 3)); // Output: 5
+function getUserBirthYear1 (user) {
+  return new Date().getFullYear() = user.age;
+
+}
+const user ={age:20};
+// diff in function
+const object ={
+  value :40,
+ 
+  methodFunction: function() {
+    console.log(this)
+     function test() {
+  console.log(this,'this inside');
+     }
+     test()
+  },
+  methodArrowFunction:() => {
+    console.log(this)
+  }
+
+}
+object.methodFunction();
+object.methodArrowFunction();
