@@ -598,3 +598,5 @@ return 22;
 }
 // Implicit return
 const arrowFunction2 = () => 22;
+const add = (a, b) => a + b;
+console.log(add(2, 3)); // Output: 5
