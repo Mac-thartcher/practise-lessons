@@ -636,3 +636,6 @@ console.log(sum(5, 10));
 
 const multiplyByTwo = a => a* 2;
 console.log(multiplyByTwo(20));
+
+const getUser = () => ({ name: "Alice", age: 30 });
+console.log(getUser()); // Output: { name: "Alice", age: 30 }
