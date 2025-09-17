@@ -639,3 +639,25 @@ console.log(multiplyByTwo(20));
 
 const getUser = () => ({ name: "Alice", age: 30 });
 console.log(getUser()); // Output: { name: "Alice", age: 30 }
+
+
+// array method
+let greekHotel = [];
+greekHotel.push('Mr.John');
+greekHotel.push('Mr.Frank');
+greekHotel.push('Mr.Zack');
+console.log(greekHotel);
+
+greekHotel.pop();
+console.log(greekHotel);
+
+greekHotel.unshift('Ms.Nancy')
+console.log(greekHotel)
+
+const isAllHotelGuestsAreMr = greekHotel.some((guest) =>
+  guest.includes('Mr.')
+);
+console.log(isAllHotelGuestsAreMr);
+
+const allHotelMembersString = greekHotel.join('*');
+console.log(allHotelMembersString);
