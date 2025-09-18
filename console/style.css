@@ -209,8 +209,3 @@ button:hover {
   background-color: crimson;
   padding: 2rem;
 }
-function getUserBirthYear1(user){
-  return new Date().getFullYear = user: .age;
-  
-}
-const user = {age:20};
