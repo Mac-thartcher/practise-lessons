@@ -41,7 +41,7 @@ form {
 
 dl {
   padding: 25px 30px;
-  background-color: rgb(225, 185, 185);
+  background-color: rgb(168, 87, 87);
 }
 
 /* specificity id,class, generics */
@@ -52,14 +52,14 @@ generic and class/id as selectors,using important */
 }
 
 .paragraph-1 {
-  color: blue;
+  color: rgb(65, 65, 184);
 }
 
 .heading-1 {
   color: green;
 }
 table {
-  color: red;
+  color: rgb(213, 98, 98);
 }
 
 /* box models */
@@ -117,7 +117,7 @@ table {
 
 button:hover {
   background-color: brown;
-  transition: 300ms;
+  transition: 400ms;
   opacity: 30%;
   padding: 4px;
 }
