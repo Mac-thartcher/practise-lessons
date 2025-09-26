@@ -188,25 +188,26 @@ button:hover {
   height: 100px;
   margin-top: 15px;
   background-color: black;
+  color: #ffffff;
 }
+
 .classes {
-  background-color:purple;
+  background-color: purple;
   text-align: center;
-  color: #ffff;
-
+  color: #ffffff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   padding: 50px 20px;
-
+  padding: 50px 20px;
 }
 
 .object {
-  background-color: peru;
-  color: #ffff;
-  
+  display: flex;
   flex-wrap: nowrap;
+  background-color: peru;
+  color: #ffffff;
 }
+
 .arrow {
   background-color: crimson;
   padding: 2rem;
-  color: #ffff;
+  color: #ffffff;
 }
