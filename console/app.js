@@ -661,3 +661,30 @@ console.log(isAllHotelGuestsAreMr);
 
 const allHotelMembersString = greekHotel.join('*');
 console.log(allHotelMembersString);
+
+// var and closures
+// old var
+var number = 1;
+number = 2;
+var number = 3;
+function function1(){
+  var one = 'one';
+}
+console.log(one);
+if(5>3){
+  var two = 2;
+}
+console,log(two)
+confirm.log(errorText);
+var errorText = 'Something went wrong';
+
+// closure
+function function1(value){
+  return function function2(){
+    console,log(value)
+  }
+}
+const function1Res =function1('Hello');
+console.log(function1Res)
+function1()();
+function1Res()
